@@ -6,6 +6,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.btns{
+  display: flex;
+  gap: 15px;
+}
+#google, #facebook, #yelp{
+  display: none;
+}
 .body {
   display: flex;
   padding: 0 35px;

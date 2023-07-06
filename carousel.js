@@ -1,73 +1,152 @@
+let displayGoogle = true, displayYelp = true, displayFacebook = true;
+
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
+const tabBtns = document.querySelectorAll(".btns button");
 
-let content = [
+let displayTabs = [
+    {
+        'label': 'google',
+        'display': displayGoogle,
+    },
+    {
+        'label': 'facebook',
+        'display': displayFacebook,
+    },
+    {
+        'label': 'yelp',
+        'display': displayYelp,
+    }
+];
+
+let all = [
     {
         'title': 'Title',
         'image': 'images/img-1.jpg',
-        'span': 'Sales Manager'
+        'span': 'Sales Manager',
+        'type': 'google'
     },
     {
         'title': 'Blanche Pearson',
         'image': 'images/img-2.jpg',
-        'span': 'Sales Manager2'
+        'span': 'Sales Manager2',
+        'type': 'facebook'
     },
     {
         'title': 'Blanche TTT',
         'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3'
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
     },
     {
         'title': 'Blanche TTT TTTTT',
         'image': 'images/img-4.jpg',
-        'span': 'Sales Manager 4'
+        'span': 'Sales Manager 4',
+        'type': 'google'
     },
     {
         'title': 'Blanche TTT TTTTT',
         'image': 'images/img-4.jpg',
-        'span': 'Sales Manager 4'
+        'span': 'Sales Manager 4',
+        'type': 'google'
     },
     {
         'title': 'Blanche TTT TTTTT',
         'image': 'images/img-4.jpg',
-        'span': 'Sales Manager 4'
+        'span': 'Sales Manager 4',
+        'type': 'google'
     }
-]
+];
 
-content.forEach(content => {
-    carousel.innerHTML += `<li class="card">
-                        <div class="img"><img src="${content.image}" draggable="false"></div>
-                        <h2>${content.title}</h2>
-                        <span>${content.span}</span>
-                        </li>`;
+// Display tabs
+displayTabs.forEach(tab => {
+    if (tab.display) {
+        document.querySelector(`#${tab.label}`).style.display = 'block';
+    }
 })
+
+// Add event listeners for the tab buttons to filter the display of cards
+tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.innerHTML = '';
+        displayCards(btn.id)
+    });
+});
+
+// Display the cards in the ul element
+function displayCards(display) {
+    let visibles = 0;
+
+    all.forEach(content => {
+        if (display == 'all') {
+            displayTabs.forEach(tab => {
+                if (tab.label == content.type && tab.display) {
+                    visibles++;
+                    carousel.innerHTML += `<li class="card">
+                                            <div class="img"><img src="${content.image}" draggable="false"></div>
+                                            <h2>${content.title}</h2>
+                                            <span>${content.span}</span>
+                                            <span>${content.type}</span>
+                                            </li>`;
+                }
+            });
+        } else {
+            if (content.type == display) {
+                visibles++;
+                carousel.innerHTML += `<li class="card">
+                                        <div class="img"><img src="${content.image}" draggable="false"></div>
+                                        <h2>${content.title}</h2>
+                                        <span>${content.span}</span>
+                                        <span>${content.type}</span>
+                                        </li>`;
+            }
+        }
+    });
+
+    const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+    const carouselChildrens = [...carousel.children];
+
+    duplicate(firstCardWidth, carouselChildrens, visibles);
+}
+
+function displayArrowBtns() {
+    document.querySelector('#right').style.display = 'block'
+    document.querySelector('#left').style.display = 'block'
+}
+
+function hideArrowBtns() {
+    document.querySelector('#right').style.display = 'none'
+    document.querySelector('#left').style.display = 'none'
+}
+
+function duplicate(firstCardWidth, carouselChildrens, visibles) {
+    // Get the number of cards that can fit in the carousel at once
+    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+    console.log(visibles, cardPerView)
+    if (visibles > cardPerView) {
+        // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+        carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+            carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+        });
+    
+        // Insert copies of the first few cards to end of carousel for infinite scrolling
+        carouselChildrens.slice(0, cardPerView).forEach(card => {
+            carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+        });
+    
+        displayArrowBtns()
+    } else {
+        hideArrowBtns()
+    }
+}
+
+// Calling the method
+displayCards('all')
 
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const carouselChildrens = [...carousel.children];
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
-
-// Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-const displayBtns = () => {
-    document.querySelector('#right').style.display = 'block'
-    document.querySelector('#left').style.display = 'block'
-}
-
-if (content.length > cardPerView) {
-    // Insert copies of the last few cards to beginning of carousel for infinite scrolling
-    carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-    });
-
-    // Insert copies of the first few cards to end of carousel for infinite scrolling
-    carouselChildrens.slice(0, cardPerView).forEach(card => {
-        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-    });
-
-    displayBtns()
-}
 
 // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
 carousel.classList.add("no-transition");
