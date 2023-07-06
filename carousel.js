@@ -23,100 +23,108 @@ let displayTabs = [
 
 let all = [
     {
-        'title': 'Title',
-        'image': 'images/img-1.jpg',
-        'span': 'Sales Manager',
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
         'type': 'google'
     },
     {
-        'title': 'Blanche Pearson',
-        'image': 'images/img-2.jpg',
-        'span': 'Sales Manager2',
-        'type': 'facebook'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT',
-        'image': 'images/img-3.jpg',
-        'span': 'Sales Manager 3',
-        'type': 'yelp'
-    },
-    {
-        'title': 'Blanche TTT TTTTT',
-        'image': 'images/img-4.jpg',
-        'span': 'Sales Manager 4',
-        'type': 'google'
-    },
-    
-    {
-        'title': 'Blanche TTT TTTTT',
-        'image': 'images/img-4.jpg',
-        'span': 'Sales Manager 4',
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
         'type': 'google'
     },
     {
-        'title': 'Blanche TTT TTTTT',
-        'image': 'images/img-4.jpg',
-        'span': 'Sales Manager 4',
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
         'type': 'google'
-    }
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'google'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'google'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'yelp'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'yelp'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'yelp'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'yelp'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'yelp'
+    },
+    {
+        'name': 'John Doe',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'yelp'
+    },
 ];
 
 async function getGoogleReviews() {
-    await fetch('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJLV2HitsliYgRDP-cgzHt1CI&fields=name,rating,reviews&key=AIzaSyAHRcJ3LBuRPcnoOmx-VfjemwiBPs3UE7M', {
+    await fetch('https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJLV2HitsliYgRDP-cgzHt1CI&fields=name,rating,reviews&key=AIzaSyAHRcJ3LBuRPcnoOmx-VfjemwiBPs3UE7M', {
         method: 'GET',
         mode: 'cors',
         })
@@ -139,7 +147,7 @@ async function getGoogleReviews() {
 }  
 
 async function getYelpReviews() {
-    await fetch('https://api.yelp.com/v3/businesses/xaDEiJ0N0SYOv-u0JXBSNQ/reviews?limit=20&sort_by=yelp_sort', {
+    await fetch('https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/xaDEiJ0N0SYOv-u0JXBSNQ/reviews?limit=20&sort_by=yelp_sort', {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -155,7 +163,7 @@ async function getYelpReviews() {
         .then(response => {
             response.reviews.forEach(res => {
                 let ap = {
-                            'name': res.name,
+                            'name': res.user.name,
                             'profile_pic': res.user.image_url,
                             'rating': res.rating,
                             'comment': res.text,
@@ -235,7 +243,7 @@ function hideArrowBtns() {
 function duplicate(firstCardWidth, carouselChildrens, visibles) {
     // Get the number of cards that can fit in the carousel at once
     let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-    console.log(visibles, cardPerView)
+
     if (visibles > cardPerView) {
         // Insert copies of the last few cards to beginning of carousel for infinite scrolling
         carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
