@@ -41,11 +41,66 @@ let all = [
         'type': 'yelp'
     },
     {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
+        'title': 'Blanche TTT',
+        'image': 'images/img-3.jpg',
+        'span': 'Sales Manager 3',
+        'type': 'yelp'
+    },
+    {
         'title': 'Blanche TTT TTTTT',
         'image': 'images/img-4.jpg',
         'span': 'Sales Manager 4',
         'type': 'google'
     },
+    
     {
         'title': 'Blanche TTT TTTTT',
         'image': 'images/img-4.jpg',
@@ -63,6 +118,7 @@ let all = [
 async function getGoogleReviews() {
     await fetch('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJLV2HitsliYgRDP-cgzHt1CI&fields=name,rating,reviews&key=AIzaSyAHRcJ3LBuRPcnoOmx-VfjemwiBPs3UE7M', {
         method: 'GET',
+        mode: 'cors',
         })
         .then(response => response.json())
         .then(response => {
@@ -85,6 +141,7 @@ async function getGoogleReviews() {
 async function getYelpReviews() {
     await fetch('https://api.yelp.com/v3/businesses/xaDEiJ0N0SYOv-u0JXBSNQ/reviews?limit=20&sort_by=yelp_sort', {
         method: 'GET',
+        mode: 'cors',
         headers: {
             "accept": 'application/json',
             "Authorization": 'Bearer yugTEZuzyqh5VDh7lDWNtqy9mLmi3-W5lgXTjf45a_8_6cswDP0UOoKInNaRM0ckn8rFEhtnME0MvRQ-gParjtflvsovNDswGuUnapmL8h1RHU9evUIZDNYG-xamZHYx',
@@ -134,7 +191,6 @@ function displayCards(display) {
     all.forEach(content => {
         if (display == 'all') {
             displayTabs.forEach(tab => {
-                console.log(content)
                 if (tab.label == content.type && tab.display) {
                     visibles++;
                     carousel.innerHTML += `<li class="card">
@@ -277,7 +333,5 @@ async function main() {
 
 // Calling the method
 main()
-
-
 
 
