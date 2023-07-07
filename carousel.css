@@ -229,6 +229,57 @@ i#right {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
+
+  .card .content {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .tab {
+    overflow-x: scroll !important;
+    height: 65px !important;
+  }
+
+  .all-reviews {
+    width: 104px;
+    justify-content: center;
+  }
+
+  .tab::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+  }
+
+  .tab::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+    background-color: #F5F5F5;
+  }
+
+  .tab::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+  }
+
+  #yelp {
+    margin-right: 24px;
+  }
+
+  .testimonial-heading {
+    height: 150px;
+    position: relative;
+  }
+
+  .write-a-review {
+    top: unset !important;
+    bottom: 5px;
+    left: 24px;
+  }
+
+  .dropdown-content {
+    margin-top: 0 !important;
+    right: unset !important;
+    top: 131px;
+  }
 }
 
 .master-container {
@@ -321,7 +372,7 @@ div {
   background-color: #e3e3e3;
   position: absolute;
   border-radius: 100px;
-  width: 100%;
+  width: 110%;
   height: 32px;
   top: 50%;
   left: 50%;
@@ -727,5 +778,5 @@ div {
   background-color: #fafafa;
   padding: 24px;
   border-radius: 8px;
-  min-height: 260.17px;
+  /* min-height: 260.17px; */
 }
