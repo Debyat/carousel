@@ -23,7 +23,16 @@ let displayTabs = [
 
 let all = [
     {
-        'name': 'John Doe',
+        'name': 'Brian Salo',
+        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+        'rating': 5,
+        'comment': 'Lorem ipsum dolor.',
+        'date': '2 days ago',
+        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+        'type': 'google'
+    },
+    {
+        'name': 'Marissa Dumayac',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -32,7 +41,7 @@ let all = [
         'type': 'google'
     },
     {
-        'name': 'John Doe',
+        'name': 'Julcarl Selma',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -41,7 +50,7 @@ let all = [
         'type': 'google'
     },
     {
-        'name': 'John Doe',
+        'name': 'Joe John Ferrolino',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -50,7 +59,7 @@ let all = [
         'type': 'google'
     },
     {
-        'name': 'John Doe',
+        'name': 'Fel Reind Entica',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -59,16 +68,7 @@ let all = [
         'type': 'google'
     },
     {
-        'name': 'John Doe',
-        'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
-        'rating': 5,
-        'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
-        'date': '2 days ago',
-        'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
-        'type': 'google'
-    },
-    {
-        'name': 'John Doe',
+        'name': 'Nigel dela Riarte',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -77,7 +77,7 @@ let all = [
         'type': 'yelp'
     },
     {
-        'name': 'John Doe',
+        'name': 'Ret Karlo Ferrolino',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -86,7 +86,7 @@ let all = [
         'type': 'yelp'
     },
     {
-        'name': 'John Doe',
+        'name': 'Daniel Cisneros',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -95,7 +95,7 @@ let all = [
         'type': 'yelp'
     },
     {
-        'name': 'John Doe',
+        'name': 'Harvey Aparece',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -104,7 +104,7 @@ let all = [
         'type': 'yelp'
     },
     {
-        'name': 'John Doe',
+        'name': 'Joey Destacamento',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -113,7 +113,7 @@ let all = [
         'type': 'yelp'
     },
     {
-        'name': 'John Doe',
+        'name': 'Ericka Jane Quitorio',
         'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
         'rating': 5,
         'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
@@ -127,7 +127,7 @@ async function getGoogleReviews() {
     await fetch('https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJLV2HitsliYgRDP-cgzHt1CI&fields=name,rating,reviews&key=AIzaSyAHRcJ3LBuRPcnoOmx-VfjemwiBPs3UE7M', {
         method: 'GET',
         mode: 'cors',
-        })
+    })
         .then(response => response.json())
         .then(response => {
             googleRatings = response.result.rating
@@ -144,7 +144,7 @@ async function getGoogleReviews() {
             })
         })
         .catch(err => console.error(err));
-}  
+}
 
 async function getYelpReviews() {
     await fetch('https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/xaDEiJ0N0SYOv-u0JXBSNQ/reviews?limit=20&sort_by=yelp_sort', {
@@ -158,24 +158,79 @@ async function getYelpReviews() {
             "Access-Control-Allow-Methods": "GET",
             "Access-Control-Allow-Credentials": "true",
         }
-        })
+    })
         .then(response => response.json())
         .then(response => {
             response.reviews.forEach(res => {
                 let ap = {
-                            'name': res.user.name,
-                            'profile_pic': res.user.image_url,
-                            'rating': res.rating,
-                            'comment': res.text,
-                            'date': res.time_created,
-                            'profile_link': res.profile_url,
-                            'type': 'yelp'
-                        }
+                    'name': res.user.name,
+                    'profile_pic': res.user.image_url,
+                    'rating': res.rating,
+                    'comment': res.text,
+                    'date': res.time_created,
+                    'profile_link': res.profile_url,
+                    'type': 'yelp'
+                }
                 all.push(ap)
             })
         })
         .catch(err => console.error(err));
-}  
+}
+
+function addFacebook() {
+    let insert = [
+        {
+            'name': 'Philip Bautista',
+            'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+            'rating': 5,
+            'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+            'date': '2 days ago',
+            'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+            'type': 'facebook'
+        },
+        {
+            'name': 'John Dave Paciño',
+            'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+            'rating': 5,
+            'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+            'date': '2 days ago',
+            'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+            'type': 'facebook'
+        },
+        {
+            'name': 'Kerwien Bengil',
+            'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+            'rating': 5,
+            'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+            'date': '2 days ago',
+            'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+            'type': 'facebook'
+        },
+        {
+            'name': 'Joshua Avenido',
+            'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+            'rating': 5,
+            'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+            'date': '2 days ago',
+            'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+            'type': 'facebook'
+        },
+        {
+            'name': 'Edward Trisana',
+            'profile_pic': 'https://lh3.googleusercontent.com/a-/AD_cMMROixjhsB9pUTPxinrxvXNyTDWcoYntAtnP75vAFoZyx34=s240-c-rp-mo-br100',
+            'rating': 5,
+            'comment': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea autem excepturi dolor facilis iure, temporibus tempora laudantium? Excepturi iusto amet sapiente, adipisci tenetur autem laboriosam, eius beatae aspernatur rerum commodi?',
+            'date': '2 days ago',
+            'profile_link': 'https://www.google.com/maps/contrib/101414297167587541507/place/ChIJR5lXc_W3j4ARlrHTCI2AEZE/@37.4030738,-122.0086372,17z/data=!3m1!4b1?entry=ttu',
+            'type': 'facebook'
+        },
+    ]
+    for (i = 0; i < insert.length; i++) {
+
+        all.push(insert[i]);
+    }
+
+}
 
 // Display tabs
 displayTabs.forEach(tab => {
@@ -194,15 +249,15 @@ tabBtns.forEach(btn => {
 
 // Get the posted Date
 function getDate(postedDate) {
-	posted_date = new Date(postedDate);
-	current_date = new Date();
+    posted_date = new Date(postedDate);
+    current_date = new Date();
 
-	var milli_secs = posted_date.getTime() - current_date.getTime();
+    var milli_secs = posted_date.getTime() - current_date.getTime();
 
-	// Convert the milli seconds to Days 
-	var days = milli_secs / (1000 * 3600 * 24);
+    // Convert the milli seconds to Days 
+    var days = milli_secs / (1000 * 3600 * 24);
 
-	return Math.round(Math.abs(days));
+    return Math.round(Math.abs(days));
 }
 
 
@@ -213,7 +268,7 @@ function displayCards(display) {
 
     all.forEach(content => {
         let stars = '';
-        
+
         for (var i = 0; i < content.rating; i++) {
             stars += `<svg class="star" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3796_102578)">
@@ -233,27 +288,106 @@ function displayCards(display) {
             displayTabs.forEach(tab => {
                 if (tab.label == content.type && tab.display) {
                     visibles++;
+                    // carousel.innerHTML += `<li class="card">
+                    //                         <div class="img"><img src="${content.profile_pic}" draggable="false"></div>
+                    //                         <h2>${content.name}</h2>
+                    //                         <div class="rating-stars">${stars}</div>
+                    //                         <span>${content.date}</span>
+                    //                         <span>${content.comment}</span>
+                    //                         <span>${content.type}</span>
+                    //                         </li>`;
+
                     carousel.innerHTML += `<li class="card">
-                                            <div class="img"><img src="${content.profile_pic}" draggable="false"></div>
-                                            <h2>${content.name}</h2>
-                                            <div class="rating-stars">${stars}</div>
-                                            <span>${content.date}</span>
-                                            <span>${content.comment}</span>
-                                            <span>${content.type}</span>
-                                            </li>`;
+                                            <div class="content">
+                                                <div class="review-image-date-wrapper">
+                                                    <img class="review-image" src="${content.profile_pic}">
+                                                    <div class="review-name-wrapper">
+                                                        <p class="review-name">${content.name}</p>
+                                                        <p class="review-date">8 days ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="star-wrapper">
+                                                    ${stars}
+                                                </div>
+                                                <div class="review-content toggle-content" id="contentText">
+                                                    ${content.comment}
+                                                </div>
+                                                <p class="readmore">Read more</p>
+                                                <div class="posted-on-wrapper">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                            class="injected-svg"
+                                                            data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-icons-google-multicolor.svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#2A84FC"
+                                                                d="M21.579 12.234c0-.677-.055-1.359-.172-2.025h-9.403v3.839h5.384a4.615 4.615 0 0 1-1.992 3.029v2.49h3.212c1.886-1.736 2.97-4.3 2.97-7.333Z">
+                                                            </path>
+                                                            <path fill="#00AC47"
+                                                                d="M12.004 21.974c2.688 0 4.956-.882 6.608-2.406l-3.213-2.491c-.893.608-2.047.952-3.392.952-2.6 0-4.806-1.754-5.597-4.113H3.095v2.567a9.97 9.97 0 0 0 8.909 5.491Z">
+                                                            </path>
+                                                            <path fill="#FFBA00"
+                                                                d="M6.407 13.916a5.971 5.971 0 0 1 0-3.817V7.531H3.095a9.977 9.977 0 0 0 0 8.953l3.312-2.568Z">
+                                                            </path>
+                                                            <path fill="#FC2C25"
+                                                                d="M12.004 5.982a5.417 5.417 0 0 1 3.824 1.494l2.846-2.846a9.581 9.581 0 0 0-6.67-2.593A9.967 9.967 0 0 0 3.095 7.53l3.312 2.57c.787-2.363 2.996-4.117 5.597-4.117Z">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <p class="posted-on-text">Posted on</p>
+                                                        <a href="#" class="where-is-it-posted">${content.type}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>`;
                 }
             });
         } else {
             if (content.type == display) {
                 visibles++;
                 carousel.innerHTML += `<li class="card">
-                                            <div class="img"><img src="${content.profile_pic}" draggable="false"></div>
-                                            <h2>${content.name}</h2>
-                                            <span>${content.rating}</span>
-                                            <span>${content.date}</span>
-                                            <span>${content.comment}</span>
-                                            <span>${content.type}</span>
-                                            </li>`;
+                                            <div class="content">
+                                                <div class="review-image-date-wrapper">
+                                                    <img class="review-image" src="${content.profile_pic}">
+                                                    <div class="review-name-wrapper">
+                                                        <p class="review-name">${content.name}</p>
+                                                        <p class="review-date">8 days ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="star-wrapper">
+                                                    ${stars}
+                                                </div>
+                                                <div class="review-content toggle-content" id="contentText">
+                                                    ${content.comment}
+                                                </div>
+                                                <p class="readmore">Read more</p>
+                                                <div class="posted-on-wrapper">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                            class="injected-svg"
+                                                            data-src="https://static.elfsight.com/icons/app-all-in-one-reviews-icons-google-multicolor.svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <path fill="#2A84FC"
+                                                                d="M21.579 12.234c0-.677-.055-1.359-.172-2.025h-9.403v3.839h5.384a4.615 4.615 0 0 1-1.992 3.029v2.49h3.212c1.886-1.736 2.97-4.3 2.97-7.333Z">
+                                                            </path>
+                                                            <path fill="#00AC47"
+                                                                d="M12.004 21.974c2.688 0 4.956-.882 6.608-2.406l-3.213-2.491c-.893.608-2.047.952-3.392.952-2.6 0-4.806-1.754-5.597-4.113H3.095v2.567a9.97 9.97 0 0 0 8.909 5.491Z">
+                                                            </path>
+                                                            <path fill="#FFBA00"
+                                                                d="M6.407 13.916a5.971 5.971 0 0 1 0-3.817V7.531H3.095a9.977 9.977 0 0 0 0 8.953l3.312-2.568Z">
+                                                            </path>
+                                                            <path fill="#FC2C25"
+                                                                d="M12.004 5.982a5.417 5.417 0 0 1 3.824 1.494l2.846-2.846a9.581 9.581 0 0 0-6.67-2.593A9.967 9.967 0 0 0 3.095 7.53l3.312 2.57c.787-2.363 2.996-4.117 5.597-4.117Z">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <p class="posted-on-text">Posted on</p>
+                                                        <a href="#" class="where-is-it-posted">${content.type}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>`;
             }
         }
     });
@@ -262,6 +396,23 @@ function displayCards(display) {
     const carouselChildrens = [...carousel.children];
 
     duplicate(firstCardWidth, carouselChildrens, visibles);
+
+    const readmore = document.querySelectorAll('p.readmore');
+
+    readmore.forEach(btn => {
+        btn.addEventListener("click", () => {
+            if (btn.innerHTML == 'Hide') {
+                btn.innerHTML = 'Read more'
+                btn.parentNode.querySelector('.review-content').classList.add('toggle-content')
+            } else {
+                btn.innerHTML = 'Hide';
+                btn.parentNode.querySelector('.toggle-content').classList.remove('toggle-content')
+            }
+        });
+    });
+
+    var contentHeight = document.getElementById("contentText").offsetHeight;;
+    console.log(contentHeight);
 }
 
 function displayArrowBtns() {
@@ -283,12 +434,12 @@ function duplicate(firstCardWidth, carouselChildrens, visibles) {
         carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
             carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
         });
-    
+
         // Insert copies of the first few cards to end of carousel for infinite scrolling
         carouselChildrens.slice(0, cardPerView).forEach(card => {
             carousel.insertAdjacentHTML("beforeend", card.outerHTML);
         });
-    
+
         displayArrowBtns()
     } else {
         hideArrowBtns()
@@ -297,8 +448,10 @@ function duplicate(firstCardWidth, carouselChildrens, visibles) {
 
 
 async function main() {
-    await getGoogleReviews(); 
-    await getYelpReviews();
+
+    // await getGoogleReviews();
+    // await getYelpReviews();
+    addFacebook()
 
     displayCards('all')
 
@@ -328,7 +481,7 @@ async function main() {
     }
 
     const dragging = (e) => {
-        if(!isDragging) return; // if isDragging is false return from here
+        if (!isDragging) return; // if isDragging is false return from here
         // Updates the scroll position of the carousel based on the cursor movement
         carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
     }
@@ -340,13 +493,13 @@ async function main() {
 
     const infiniteScroll = () => {
         // If the carousel is at the beginning, scroll to the end
-        if(carousel.scrollLeft === 0) {
+        if (carousel.scrollLeft === 0) {
             carousel.classList.add("no-transition");
             carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
             carousel.classList.remove("no-transition");
         }
         // If the carousel is at the end, scroll to the beginning
-        else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
             carousel.classList.add("no-transition");
             carousel.scrollLeft = carousel.offsetWidth;
             carousel.classList.remove("no-transition");
@@ -354,24 +507,24 @@ async function main() {
 
         // Clear existing timeout & start autoplay if mouse is not hovering over carousel
         clearTimeout(timeoutId);
-        if(!wrapper.matches(":hover")) autoPlay();
+        // if (!wrapper.matches(":hover")) autoPlay();
     }
 
-    const autoPlay = () => {
-        if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-        // Autoplay the carousel after every 2500 ms
-        timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-    }
-    autoPlay();
+    // const autoPlay = () => {
+    //     if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    //     // Autoplay the carousel after every 2500 ms
+    //     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+    // }
+    // autoPlay();
 
     carousel.addEventListener("mousedown", dragStart);
     carousel.addEventListener("mousemove", dragging);
     document.addEventListener("mouseup", dragStop);
     carousel.addEventListener("scroll", infiniteScroll);
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-    wrapper.addEventListener("mouseleave", autoPlay);
+    // wrapper.addEventListener("mouseleave", autoPlay);
 }
-    
+
 
 // Calling the method
 main()

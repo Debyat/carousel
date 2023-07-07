@@ -1,109 +1,150 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.btns{
+
+.btns {
   display: flex;
   gap: 15px;
 }
-#google, #facebook, #yelp{
+
+#google,
+#facebook,
+#yelp {
   display: none;
 }
-.body {
+
+.carousel-body {
   display: flex;
-  padding: 0 35px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(to left top, #031A9A, #8B53FF);
-  max-width: 1200px;
+  position: relative;
 }
+
 .wrapper {
-  max-width: 1100px;
   width: 100%;
   position: relative;
 }
+
 .wrapper i {
   top: 50%;
-  height: 50px;
-  width: 50px;
+  height: 32px;
+  width: 32px;
   cursor: pointer;
   font-size: 1.25rem;
   position: absolute;
   text-align: center;
-  line-height: 50px;
-  background: #fff;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
+  background-color: rgba(17, 17, 17, 0.5);
+  fill: rgb(255, 255, 255);
+  transition: all 0.3s ease;
 }
-.wrapper i:active{
+
+.wrapper i:hover {
+  background-color: rgb(17, 17, 17);
+}
+
+.wrapper i:active {
   transform: translateY(-50%) scale(0.85);
 }
-.wrapper i:first-child{
+
+.wrapper i:first-child {
   left: -22px;
   display: none;
 }
-.wrapper i:last-child{
+
+.wrapper i:last-child {
   right: -22px;
   display: none;
 }
-.wrapper .carousel{
+
+.fa-angle-left:before,
+.fa-angle-right:before {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+
+i#left {
+  left: 8px;
+}
+
+i#right {
+  right: 8px;
+}
+
+.wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 12px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 16px;
+  gap: 20px;
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
+
 .carousel.no-transition {
   scroll-behavior: auto;
 }
+
 .carousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
+
 .carousel.dragging .card {
   cursor: grab;
   user-select: none;
 }
+
 .carousel :where(.card, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
   list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
+  /* background: #fafafa; */
+  cursor: grabbing;
   flex-direction: column;
   border-radius: 8px;
-  padding: 10px;
+  /* padding: 24px; */
+  display: flex;
+  justify-content: flex-start;
 }
+
 .star {
   width: 20px;
   height: 20px;
 }
+
 .carousel .card .img {
   /* background: #8B53FF; */
   /* height: 148px; */
   /* width: 148px; */
   border-radius: 50%;
 }
+
 .card .img img {
   width: 50px;
   height: 50px;
@@ -111,20 +152,22 @@
   object-fit: cover;
   border: 4px solid #fff;
 }
+
 .carousel .card h2 {
   font-weight: 500;
   font-size: 1rem;
   margin: 30px 0 5px;
 }
+
 .carousel .card span {
   color: #6A6D78;
   font-size: 0.7rem;
 }
 
 /* Desktop */
-@media screen and (min-width: 1040px){
+@media screen and (min-width: 1040px) {
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 4) - 9px);
+    grid-auto-columns: calc((100% / 4) - 15px);
   }
 }
 
@@ -147,4 +190,520 @@
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
+}
+
+/* Philip CSS */
+
+.master-container {
+  max-width: 1200px;
+  margin-top: 100px;
+  margin: 100px auto 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: #111111;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+div {
+  color: #111111;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.main-container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #fafafa;
+  height: 45px;
+  display: flex;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 7px;
+  transition: 0.3s;
+  font-size: 14px;
+  display: flex !important;
+  align-items: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  /* background-color: #e3e3e3;
+    height: 32px;
+    border-radius: 100px; */
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /* background-color: #e3e3e3; */
+}
+
+.tablinks.active {
+  border-bottom: 1px solid;
+  /* position: relative; */
+}
+
+.tablinks {
+  position: relative;
+  z-index: 2;
+}
+
+.tablinks.active::before {
+  content: "";
+  background-color: #e3e3e3;
+  position: absolute;
+  border-radius: 100px;
+  width: 100%;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.tab button.active::before {
+  /* background-color: #e3e3e3; */
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 18px 0 24px 0;
+  background-color: #fafafa;
+  min-height: 60px;
+  position: relative;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 1200px;
+  margin: auto;
+}
+
+.tab-review-count {
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+.tablinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.injected-svg.google,
+.injected-svg.facebook,
+.injected-svg.yelp {
+  width: 24px;
+}
+
+.tab-item {
+  margin-left: 8px;
+}
+
+.all_reviews.tab-item {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.testimonial-heading h3 {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 36px;
+}
+
+.tabcontent p {
+  margin: 0;
+}
+
+.injected-svg.google-bottom,
+.injected-svg.facebook-bottom {
+  width: 85px;
+  margin-right: 8px;
+  height: 36px;
+}
+
+.injected-svg.yelp-bottom {
+  width: 72px;
+  margin-right: 8px;
+}
+
+.review-count {
+  font-size: 20px;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+}
+
+.star-wrapper {
+  display: flex;
+  margin-right: 12px;
+}
+
+.count-star-wrapper,
+.count-main-container {
+  display: flex;
+  align-items: center;
+}
+
+.count-reviews {
+  display: flex;
+  color: #11111180;
+  font-size: 12px;
+}
+
+.mr-6 {
+  margin-right: 6px !important;
+}
+
+.write-a-review {
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  background-color: rgb(28, 145, 255);
+  height: 37.8px;
+  width: 137.22px;
+  padding: 0;
+  position: absolute;
+  top: 51px;
+  right: 24px;
+  transform: translateY(-50%);
+}
+
+.write-a-review span {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+}
+
+/*********************************************************** carousel */
+
+/* .content {
+  max-height: 285px;
+  box-sizing: border-box;
+  font-size: 40px;
+  border-radius: 8px;
+} */
+
+#galleries-list {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  width: 100%;
+  /* background-color: powderblue; */
+  margin-top: 44px;
+  position: relative;
+}
+
+#galleries-list ul {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#galleries-list ul li {
+  position: relative;
+  left: 0px;
+  float: left;
+  width: 25%;
+  margin: 0px;
+  padding: 0px;
+  transition: left .75s ease-out;
+}
+
+#galleries-list .slider-nav {
+  background: pink;
+  width: 100%;
+}
+
+.slider-nav .slide-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.slider-nav .slide-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#galleries-list .slide-left,
+#galleries-list .slide-right {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+.slide-left,
+.slide-right {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(17, 17, 17, 0.5);
+  fill: rgb(255, 255, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px 0px; */
+  position: relative;
+  display: flex;
+  padding: 0px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.slide-left:hover,
+.slide-right:hover {
+  background-color: #111111;
+}
+
+.slide-left svg,
+.slide-right svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ************************* custom */
+
+.review-image-date-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.review-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 100px;
+}
+
+.review-name {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 4px !important;
+}
+
+.review-date {
+  font-size: 12px;
+}
+
+.star-wrapper {
+  margin-bottom: 6px;
+}
+
+.review-content {
+  font-size: 16px;
+  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow: hidden !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.toggle-content {
+  -webkit-line-clamp: 3;
+}
+
+.read-more,
+.read-less {
+  color: #11111180;
+}
+
+.more {
+  display: none;
+}
+
+.post:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.readmore {
+  color: #11111180;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.posted-on-wrapper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.posted-on-wrapper svg {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.posted-on-text {
+  font-size: 12px;
+  color: #11111180;
+}
+
+.where-is-it-posted {
+  font-size: 14px;
+  color: #1c91ff;
+  display: flex;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.where-is-it-posted:hover {
+  text-decoration: underline;
+}
+
+/* dropdown */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 24px;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 17, 0.2) 0px 8px 16px 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.1s ease 0s;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 4px;
+  pointer-events: all;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.dropbtn.write-a-review {
+  cursor: pointer;
+}
+
+.dropdown-content p {
+  font-size: 17px;
+  color: #475874;
+  padding: 16px 20px 6px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+.where-to-review-svg-wrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+.review-google,
+.review-facebook,
+.review-yelp {
+  display: flex !important;
+}
+
+.review-google p,
+.review-facebook p,
+.review-yelp p {
+  font-size: 12px;
+  color: rgba(17, 17, 17, 0.5);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin-left: 8px;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.testimonial-heading {
+  background-color: #fafafa;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 18px 24px 24px 24px;
+}
+
+.card .content {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 24px;
+  border-radius: 8px;
+  min-height: 260.17px;
 }
